@@ -12,12 +12,14 @@ import Navbar from "../components/globals/Navbar"
 
 import "./layout.css"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Footer from "./globals/Footer"
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
       {children}
+      <Footer />
     </div>
   )
 }

@@ -1,9 +1,9 @@
 :root {
-  --mainBrown: #2d1ef1;
-  --mainYellow: #ff9e09;
+  --mainBrown: #2d1e1f;
+  --mainYellow: rgb(255, 158, 9);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
-  --mainDark: #222222;
+  --mainDark: #222;
 }
 
 body {
@@ -20,7 +20,6 @@ h6 {
   font-family: "Courier New", Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
-
 .text-yellow {
   color: var(--mainYellow);
 }
@@ -28,4 +27,29 @@ h6 {
   cursor: pointer;
   color: var(--mainYellow);
   font-size: 2rem;
+}
+.default-background,
+.about-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  opacity: 1 !important;
+  background-position: center;
+  background-size: cover;
+}
+.btn-yellow {
+  color: var(--mainYellow) !important;
+  border-color: var(--mainYellow) !important;
+}
+.btn-yellow:hover {
+  color: var(--mainWhite) !important;
+  background-color: var(--mainYellow) !important;
+}
+.footer {
+  background: var(--mainBrown);
+}
+.about-background {
+  min-height: 60vh;
 }
